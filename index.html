@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar with Appointment Form</title>
+    <link rel="stylesheet" href="index.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <h1>HEALTHCARE</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about-us">About Us</a></li>
+        <li><a href="#service-page">Services</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#contact-us">Contact Us</a></li>
+
+        <li>
+          <button id="appointment-button">
+            <span>Appointment Booking Form</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="form-container" class="modal">
+      <div class="modal-content">
+        <h2>Appointment Booking Form</h2>
+        <form id="appointment-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+          <label for="number">Phone No:</label>
+          <input type="number" id="number" name="number" required /><br /><br />
+          <label for="date">Appointment Date:</label>
+          <input type="date" id="date" name="date" required /><br /><br />
+          <button class="button-81" role="button">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="left-part">
+        <h1>
+          Find and Search Your <br />
+          Suitable Doctor
+        </h1>
+        <p>
+          Book your doctor's appointment online for convenience. Choose from a
+          wide range of specialists, view available time slots, and get instant
+          confirmation. Simplify your healthcare with easy online booking.
+        </p>
+        <div class="buttons">
+          <button class="btn-find">Find Your Doctor</button>
+          <button class="btn-location">
+            <i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan
+          </button>
+          <button class="btn-search">Search</button>
+        </div>
+      </div>
+      <div class="right-part">
+        <div class="circle">
+          <img
+            src="./Premium Photo _ Male doctor on light surface.jpeg"
+            alt="Doctor Image"
+            class="doctor-img"
+          />
+          <div class="icon zoom">
+            <i class="fa-brands fa-square-instagram"></i>
+          </div>
+          <div class="icon message"><i class="fas fa-envelope"></i></div>
+          <div class="icon whatsapp"><i class="fab fa-whatsapp"></i></div>
+          <div class="icon facebook"><i class="fa-brands fa-facebook"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT US -->
+
+    <div class="about-us" id="about-us">
+      <div class="about-image">
+        <img
+          src="./The Doctor - a cartoon character.jpeg"
+          alt="Doctor Image"
+          class="doctor-img-about"
+        />
+      </div>
+      <div class="about-content">
+        <h1 class="head">ABOUT US</h1>
+        <h1>Best Quality Service with Our <br />Experienced Doctors</h1>
+        <p>
+          Experience the best quality service with our team of highly
+          experienced doctors. Dedicated to your health and well-being, we
+          ensure personalized care and advanced treatments for all your medical
+          needs. Trust us for exceptional healthcare..
+        </p>
+        <div class="about-list">
+          <p>
+            <i class="fas fa-check"></i> Search your specialist & online
+            consultants anywhere
+          </p>
+          <p><i class="fas fa-check"></i> Search our top specialists</p>
+          <p><i class="fas fa-check"></i> Doctors are available 24/7</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SERVICE CARDS -->
+    <div class="services">
+      <h1 class="service">OUR SERVICES</h1>
+      <div class="service-card" id="service-page">
+        <div class="service-image">
+          <img
+            src="./The blood flow in the pulmonary and systemic circuits.jpeg"
+            alt="Service 1 Image"
+            class="service-img"
+          />
+        </div>
+        <h3>Pulmonary</h3>
+        <p>
+          Our pulmonary cleansing service focuses on detoxifying and improving
+          lung health. Utilizing advanced techniques and personalized care, we
+          help you breathe easier, reduce respiratory issues, and enhance
+          overall lung function for a healthier life.
+        </p>
+     
+        <button class="button-33" role="button">READ MORE</button>
+      </div>
+      <div class="service-card">
+        <div class="service-image">
+          <img
+            src="./Kidneys Vector Hd Images, Kidney, Png, Branding, Clinic PNG Image For Free Download.jpeg"
+            alt="Service 2 Image"
+            class="service-img"
+          />
+        </div>
+        <h3>Kidney</h3>
+        <p>
+          Our kidney treatment services provide comprehensive care for various
+          renal conditions. From preventive screenings to advanced dialysis, we
+          ensure optimal kidney health with personalized treatment plans,
+          improving your quality of life and managing chronic kidney diseases
+          effectively.
+        </p>
+        <!-- HTML !-->
+        <button class="button-33" role="button">READ MORE</button>
+      </div>
+      <div class="service-card">
+        <div class="service-image">
+          <img
+            src="./Highlighter Stroke Vector Hd Images, Cartoon Stroke Highlight Shadow Real Heart Clipart, Real Heart Clipart, Real Heart, Heart PNG Image For Free Download.jpeg"
+            alt="Service 3 Image"
+            class="service-img"
+          />
+        </div>
+        <h3>Heart</h3>
+        <p>
+          Our heart management program offers expert cardiovascular care.
+          Combining preventive measures, advanced diagnostics, and personalized
+          treatments, we aim to enhance heart health, manage conditions like
+          hypertension and heart disease, and promote a heart-healthy lifestyle
+          for long-term wellness
+        </p>
+
+        <button class="button-33" role="button">READ MORE</button>
+      </div>
+    </div>
+
+    <!-- FEEDBACK CARDS -->
+
+    <div class="feedback-container" id="feedback">
+      <h1 class="feedback-title">Patient Feedback</h1>
+      <button class="arrow arrow-left" id="prev">&#10094;</button>
+      <div class="feedback-wrapper" id="feedback-wrapper">
+        <div class="feedback-cards" id="feedback-cards">
+          <div class="feedback-card">
+            <div class="feedback-image">
+              <img src="./servecs.jpeg" alt="John Doe" />
+            </div>
+            <p>"Excellent service and care! Highly recommend."</p>
+            <h4>- John Doe</h4>
+          </div>
+          <div class="feedback-card">
+            <div class="feedback-image">
+              <img src="./doctors.jpeg" alt="Jane Smith" />
+            </div>
+            <p>"Very professional and experienced doctors."</p>
+            <h4>- Jane Smith</h4>
+          </div>
+          <div class="feedback-card">
+            <div class="feedback-image">
+              <img src="./great experience.jpeg" alt="Mary Johnson" />
+            </div>
+            <p>"Great experience, felt very comfortable."</p>
+            <h4>- Mary Johnson</h4>
+          </div>
+          <div class="feedback-card">
+            <div class="feedback-image">
+              <img src="./hospital staff.jpeg" alt="James Brown" />
+            </div>
+            <p>"Outstanding service and friendly staff."</p>
+            <h4>- James Brown</h4>
+          </div>
+          <div class="feedback-card">
+            <div class="feedback-image">
+              <img src="./satisfied treatment.jpeg" alt="Patricia Davis" />
+            </div>
+            <p>"Highly satisfied with the treatment."</p>
+            <h4>- Patricia Davis</h4>
+          </div>
+          <div class="feedback-card">
+            <div class="feedback-image">
+              <img src="./greaat experience 2.jpeg" alt="Michael Wilson" />
+            </div>
+            <p>"Will definitely recommend to others."</p>
+            <h4>- Michael Wilson</h4>
+          </div>
+        </div>
+      </div>
+      <button class="arrow arrow-right" id="next">&#10095;</button>
+    </div>
+
+    <!-- CONTACT US -->
+    <div class="contact-us">
+      <div class="contact-container" id="contact-us">
+        <div class="contact-info">
+          <h2>Contact Us</h2>
+          <p>
+            We'd love to hear from you! Please fill out the form below and we
+            will get in touch with you shortly.
+          </p>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> 123 Main Street, Islamabad,
+              Pakistan
+            </li>
+            <li><i class="fas fa-phone"></i> +92 123 456 789</li>
+            <li><i class="fas fa-envelope"></i> info@example.com</li>
+          </ul>
+          <img class="image-contact" src="./contact us.jpg" alt="" />
+        </div>
+        <div class="contact-form">
+          <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required /><br /><br />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required /><br /><br />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea
+            ><br /><br />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3>About Us</h3>
+          <p>
+            We provide the best medical services with experienced doctors
+            available 24/7. Your health is our priority.
+          </p>
+        </div>
+        <div class="footer-center">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Islamabad, Pakistan</p>
+          <p><i class="fas fa-phone-alt"></i> +92 123 4567890</p>
+          <p><i class="fas fa-envelope"></i> info@mywebsite.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    
+  </body>
+</html>
